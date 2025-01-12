@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conoce las Notas del Ukelele</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: #F4F4F4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .logo {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 100px;
+            height: auto;
+            z-index: 1000;
+        }
+
+        .header {
+            background-image: url('https://static.wixstatic.com/media/85afce_5bcc0cfb9bf84f9b90f8625538798df5~mv2.webp');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .header p {
+            font-size: 18px;
+            margin: 10px 0 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #1A237E;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .ukulele-diagram {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        .diagram-container {
+            position: relative;
+            width: 60%;
+            height: 300px;
+            background-color: #F4F4F4;
+            border: 1px solid #CCC;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .string {
+            position: absolute;
+            left: 10%;
+            width: 80%;
+            height: 4px;
+            background: #333;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .string:hover {
+            background: #3949AB;
+        }
+
+        .note-display {
+            width: 35%;
+            padding: 20px;
+            background: #E3F2FD;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 18px;
+            color: #1A237E;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .note-display span {
+            color: #3949AB;
+            font-size: 24px;
+        }
+
+        .tip-section, .history-section {
+            background: #E3F2FD;
+            padding: 15px;
+            border-left: 5px solid #3949AB;
+            margin: 20px 0;
+            font-size: 16px;
+        }
+
+        .fun-fact {
+            background: #FFF3E0;
+            padding: 15px;
+            border-left: 5px solid #FF7043;
+            margin: 20px 0;
+            font-size: 16px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #CCC;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background: #3949AB;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #F9F9F9;
+        }
+
+        tr:hover {
+            background: #DCE775;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo -->
+    <img class="logo" src="https://static.wixstatic.com/media/85afce_3adb3865c88a492b93a8bf2dc69049c3~mv2.png" alt="Logo Musicala">
+    
+    <!-- Encabezado -->
+    <div class="header">
+        <h1>🎶 Conoce las Notas del Ukelele 🎵</h1>
+        <p>Descubre cómo se organizan las notas, su historia y datos curiosos sobre este maravilloso instrumento.</p>
+    </div>
+
+    <div class="container">
+        <!-- Introducción -->
+        <h2>Introducción</h2>
+        <p>
+            El ukelele es un instrumento pequeño pero poderoso, amado por su tono cálido y facilidad de uso. 
+            Sin embargo, para dominarlo, es esencial entender cómo están organizadas sus notas y cómo se relacionan entre sí.
+        </p>
+
+        <!-- Historia del ukelele -->
+        <div class="history-section">
+            🌍 <strong>Un poco de historia:</strong> El ukelele nació en Hawái en el siglo XIX, inspirado en el instrumento portugués llamado machete. Su nombre significa "pulga saltarina", y su popularidad se extendió rápidamente gracias a su portabilidad y versatilidad.
+        </div>
+
+        <!-- Explicación general -->
+        <h2>¿Cómo están organizadas las notas en el ukelele?</h2>
+        <p>
+            El ukelele tiene 4 cuerdas afinadas en Sol, cuarta cuerda, (G), Do, tercera cuerda, (C), Mi, segunda cuerda, (E) y La, primera cuerda, (A). Cada cuerda, al pulsarla en diferentes trastes, sigue la escala cromática: 
+            <strong>Do, Do#, Re, Re#, Mi, Fa, Fa#, Sol, Sol#, La, La#, Si.</strong>
+        </p>
+
+        <h2>¿Por qué se eligieron estas notas?</h2>
+        <p>
+            Estas notas fueron seleccionadas para maximizar el rango melódico del ukelele mientras se mantiene la comodidad al tocar. 
+            Su afinación en "GCEA" (Sol, Do, Mi y La) permite tocar acordes fácilmente y aprovechar al máximo su pequeño tamaño.
+        </p>
+
+        <!-- Tip -->
+        <div class="tip-section">
+            🎸 <strong>Tip:</strong> Practica las notas al aire primero (Sol, Do, Mi, La). Una vez que las memorices, usa la escala cromática para avanzar por los trastes.
+        </div>
+
+        <!-- Dato curioso -->
+        <div class="fun-fact">
+            🎵 <strong>Dato curioso:</strong> ¿Sabías que artistas famosos como Israel Kamakawiwo'ole y George Harrison popularizaron el ukelele? ¡Es un instrumento amado en todo el mundo!
+        </div>
+
+        <!-- Diagrama interactivo -->
+        <h2>Diagrama interactivo del ukelele</h2>
+        <div class="ukulele-diagram">
+            <div class="diagram-container">
+                <div class="string" style="top: 15%;" data-string="4ª cuerda: Sol (G)"></div>
+                <div class="string" style="top: 35%;" data-string="3ª cuerda: Do (C)"></div>
+                <div class="string" style="top: 55%;" data-string="2ª cuerda: Mi (E)"></div>
+                <div class="string" style="top: 75%;" data-string="1ª cuerda: La (A)"></div>
+            </div>
+            <div id="note-display" class="note-display">
+                <span>Selecciona una cuerda</span>
+            </div>
+        </div>
+
+        <!-- Tabla de notas -->
+        <h2>Tabla de todas las notas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Traste</th>
+                    <th>4ª cuerda (Sol)</th>
+                    <th>3ª cuerda (Do)</th>
+                    <th>2ª cuerda (Mi)</th>
+                    <th>1ª cuerda (La)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>0</td><td>Sol</td><td>Do</td><td>Mi</td><td>La</td></tr>
+                <tr><td>1</td><td>Sol#</td><td>Do#</td><td>Fa</td><td>La#</td></tr>
+                <tr><td>2</td><td>La</td><td>Re</td><td>Fa#</td><td>Si</td></tr>
+                <tr><td>3</td><td>La#</td><td>Re#</td><td>Sol</td><td>Do</td></tr>
+                <tr><td>4</td><td>Si</td><td>Mi</td><td>Sol#</td><td>Do#</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        © Musicala 2025. Todos los derechos reservados.
+    </div>
+
+    <script>
+        // Mostrar la nota al lado del diagrama
+        const strings = document.querySelectorAll('.string');
+        const noteDisplay = document.getElementById('note-display');
+
+        strings.forEach(string => {
+            string.addEventListener('mouseover', (e) => {
+                const stringName = e.target.getAttribute('data-string');
+                noteDisplay.innerHTML = `<span>${stringName}</span>`;
+            });
+
+            string.addEventListener('mouseout', () => {
+                noteDisplay.innerHTML = `<span>Selecciona una cuerda</span>`;
+            });
+        });
+    </script>
+</body>
+</html>
